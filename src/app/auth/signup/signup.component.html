@@ -2,6 +2,7 @@
   <form
     fxLayout="column"
     fxLayoutAlign="center center"
+    fxLayoutGap="10px"
     #f="ngForm"
     (ngSubmit)="onSubmit(f)"
   >
@@ -51,7 +52,7 @@
       <mat-datepicker touchUi #picker></mat-datepicker>
     </mat-form-field>
     <mat-checkbox ngModel name="agree" required>Agree to T&C</mat-checkbox>
-    <button type="submit" mat-raised-button color="primary">Submit</button>
+    <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid">Submit</button>
   </form>
 </section>
 <section><div></div></section>
