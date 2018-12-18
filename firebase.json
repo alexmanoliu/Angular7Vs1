@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": "dist/angular7-vs1",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [{
+      "source": "**",
+      "destination": "dist/angular7-vs1/index.html"
+    }]
+  }
+}

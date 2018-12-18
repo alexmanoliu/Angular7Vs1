@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "default": "dist/angular7-fitness-app"
+  }
+}
